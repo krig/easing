@@ -1,3 +1,20 @@
+# Easing functions
+
+by Kristoffer Gronlund, 2014
+Public domain
+
+This work is a spiritual descendent (not to say derivative work) of works done by the following individuals:
+
+* Warren Moore (https://github.com/warrenm)
+* Robert Penner (http://www.robertpenner.com/easing/)
+* George McGinley Smith (http://gsgd.co.uk/sandbox/jquery/easing/)
+* James Padolsey (http://james.padolsey.com/demos/jquery/easing/)
+* Authors of jQuery (http://plugins.jquery.com/project/Easing)
+* Matt Gallagher (http://cocoawithlove.com/2008/09/parametric-acceleration-curves-in-core.html)
+* Jesse Crossen (http://stackoverflow.com/questions/5161465/how-to-create-custom-easing-function-with-core-animation)
+
+## Demo
+
 <pre>
 |                                                           x
 |                                                        xx
@@ -19,8 +36,9 @@
 |        xxx
 |     xx
 |  xx
-|x
+|xx
 +----------------------------------------------------- linear
+
 
 |
 |                                                          x
@@ -45,6 +63,7 @@
 |xxxxxxxx
 +------------------------------------------------ quadraticIn
 
+
 |                                                     xxxxxxx
 |                                             xxxxx
 |                                        xxx
@@ -67,6 +86,7 @@
 |  x
 |x
 +----------------------------------------------- quadraticOut
+
 
 |                                                       xxxxx
 |                                                  xxx
@@ -91,6 +111,7 @@
 |xxxxxx
 +--------------------------------------------- quadraticInOut
 
+
 |
 |                                                           x
 |                                                          x
@@ -113,6 +134,7 @@
 |                    xxxxx
 |xxxxxxxxxxxxxxxx
 +---------------------------------------------------- cubicIn
+
 
 |                                             xxxxxxxxxxxxxxx
 |                                    xxxxx
@@ -137,6 +159,7 @@
 |x
 +--------------------------------------------------- cubicOut
 
+
 |                                                   xxxxxxxxx
 |                                             xxx
 |                                          xx
@@ -159,6 +182,7 @@
 |             xxx
 |xxxxxxxxxx
 +------------------------------------------------- cubicInOut
+
 
 |
 |                                                           x
@@ -183,6 +207,7 @@
 |xxxxxxxxxxxxxxxxxxxxxx
 +-------------------------------------------------- quarticIn
 
+
 |                                              xxxxxxxxxxxxxx
 |                                       xxxx
 |                                  xxx
@@ -205,6 +230,27 @@
 |
 |           x
 +------------------------------------------------- quarticOut
+           x
+
+          x
+         x
+
+        x
+
+       x
+
+
+
+
+
+
+
+
+
+  x
+
+ x
+
 
 |
 |
@@ -229,6 +275,7 @@
 |xxxxxxxxxxxxxxxxxxxxxxxxxxx
 +-------------------------------------------------- quinticIn
 
+
 |                                  xxxxxxxxxxxxxxxxxxxxxxxxxx
 |                          xxxx
 |                     xxx
@@ -251,6 +298,7 @@
 |
 |x
 +------------------------------------------------- quinticOut
+
 
 |                                             xxxxxxxxxxxxxxx
 |                                        xxx
@@ -275,6 +323,7 @@
 |xxxxxxxxxxxxxxxx
 +----------------------------------------------- quinticInOut
 
+
 |
 |                                                          x
 |                                                        x
@@ -297,6 +346,7 @@
 |          xxxxx
 |xxxxxxx
 +----------------------------------------------------- sineIn
+
 
 |                                                      xxxxxx
 |                                              xxxxx
@@ -321,6 +371,7 @@
 |x
 +---------------------------------------------------- sineOut
 
+
 |                                                        xxxx
 |                                                   xx
 |                                               xx
@@ -343,6 +394,7 @@
 |        xx
 |xxxxx
 +-------------------------------------------------- sineInOut
+
 
 |
 |
@@ -367,6 +419,7 @@
 |xxxxxxxxxxx
 +------------------------------------------------- circularIn
 
+
 |                                                  xxxxxxxxxx
 |                                       xxxxxx
 |                                xxxxx
@@ -389,6 +442,7 @@
 |
 |x
 +------------------------------------------------ circularOut
+
 
 |                                                     xxxxxxx
 |                                              xxxx
@@ -413,6 +467,7 @@
 |xxxxxxxx
 +---------------------------------------------- circularInOut
 
+
 |
 |
 |                                                           x
@@ -435,6 +490,7 @@
 |                               xxxxxx
 |xxxxxxxxxxxxxxxxxxxxxxxxx
 +---------------------------------------------- exponentialIn
+
 
 |                                    xxxxxxxxxxxxxxxxxxxxxxxx
 |                        xxxxxx
@@ -459,6 +515,7 @@
 |x
 +--------------------------------------------- exponentialOut
 
+
 |                                             xxxxxxxxxxxxxxx
 |                                       xxx
 |                                     x
@@ -482,6 +539,7 @@
 |xxxxxxxxxxxxxxxx
 +------------------------------------------- exponentialInOut
 
+
 |
 |
 |
@@ -504,7 +562,22 @@
 |                                       x
 |xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx       x        x
 +-------------------------------------------------- elasticIn
+                                 xxxx           x
 
+                                                 x
+
+
+                                                   x
+                                                    xx
+
+
+         xx
+           x
+
+
+             x
+
+              x           xxxx
 |              x        x       xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 |                     x
 |                x  xx
@@ -527,6 +600,10 @@
 |
 |x
 +------------------------------------------------- elasticOut
+
+
+                                    x
+                                  x
 
 |                                     x   xx  xxxxxxxxxxxxxxx
 |                                x     xxx
@@ -551,6 +628,10 @@
 |xxxxxxxxxxxxxxxx  xx   x
 +----------------------------------------------- elasticInOut
 
+                            x
+                          x
+
+
 |
 |
 |                                                           x
@@ -573,7 +654,22 @@
 |                                                x
 |xxxxx                                          x
 +----------------------------------------------------- backIn
+        xxx                                    x
+            xx                                x
+               xx                            x
+                  xx                        x
+                    xx                    x
+                       xxx              x
+                           xxx      xxx
 
+
+                        xxx      xxx
+                      x              xxx
+                    x                    xx
+                  x                        xx
+                 x                            xx
+                x                                xx
+               x                                    xxx
 |             x                                          xxxx
 |            x
 |           x
@@ -597,6 +693,10 @@
 |x
 +---------------------------------------------------- backOut
 
+                                            xxx
+                                         xx      xx
+                                        x           xx
+                                                       xx
 |                                                         xxx
 |
 |
@@ -619,6 +719,10 @@
 |
 |xxxx
 +-------------------------------------------------- backInOut
+      xx
+         xx           x
+            xx      xx
+                xxx
 
 |                                                          xx
 |                                                       xx
@@ -643,6 +747,7 @@
 |xx   xx         x                     x
 +--------------------------------------------------- bounceIn
 
+
 |                      x                     x         xx   x
 |                       x                   x xx     x
 |                        x                       xxx
@@ -665,6 +770,7 @@
 |    xx
 |xxx
 +-------------------------------------------------- bounceOut
+
 
 |                                         x          x    xxx
 |                                          x        x  xx
