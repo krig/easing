@@ -1,6 +1,7 @@
 # Easing functions
 
-by Kristoffer Gronlund, 2014
+> by Kristoffer Gronlund, 2014
+
 Public domain
 
 This work is a spiritual descendent (not to say derivative work) of works done by the following individuals:
