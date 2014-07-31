@@ -1,0 +1,27 @@
+#!/bin/sh
+[ -e $1 ] && rm $1
+cat > $1 <<EOF
+# Easing functions
+
+> by Kristoffer Gronlund, 2014
+
+Public domain
+
+This work is a spiritual descendent (not to say derivative work) of works done by the following individuals:
+
+* Warren Moore (https://github.com/warrenm)
+* Robert Penner (http://www.robertpenner.com/easing/)
+* George McGinley Smith (http://gsgd.co.uk/sandbox/jquery/easing/)
+* James Padolsey (http://james.padolsey.com/demos/jquery/easing/)
+* Authors of jQuery (http://plugins.jquery.com/project/Easing)
+* Matt Gallagher (http://cocoawithlove.com/2008/09/parametric-acceleration-curves-in-core.html)
+* Jesse Crossen (http://stackoverflow.com/questions/5161465/how-to-create-custom-easing-function-with-core-animation)
+
+## Demo
+
+<pre>
+EOF
+
+./test_easing >> $1
+
+echo "</pre>" >> $1
