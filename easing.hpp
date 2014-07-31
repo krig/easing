@@ -179,9 +179,9 @@ namespace easing {
 		if (t < 4. / 11.) {
 			return (121. * t * t) / 16.;
 		} else if (t < 8. / 11.) {
-			return (363. / 40. * t * t) - (99/10.0 * t) + 17/5.0;
+			return (363. / 40. * t * t) - (99 / 10. * t) + 17 / 5.;
 		} else if (t < 9. / 10.) {
-			return (4356. / 361.0 * t * t) - (35442. / 1805. * t) + 16061. / 1805.;
+			return (4356. / 361. * t * t) - (35442. / 1805. * t) + 16061. / 1805.;
 		} else {
 			return (54. / 5. * t * t) - (513. / 25. * t) + 268. / 25.;
 		}
@@ -192,12 +192,9 @@ namespace easing {
 	}
 
 	template <typename T> T bounceInOut(T t) {
-		if (t < 0.5)
-		{
+		if (t < 0.5) {
 			return 0.5 * bounceIn(t * 2.);
-		}
-		else
-		{
+		} else {
 			return 0.5 * bounceOut(t * 2. - 1.) + 0.5;
 		}
 	}
