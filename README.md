@@ -209,48 +209,28 @@ This work is a spiritual descendent (not to say derivative work) of works done b
 +-------------------------------------------------- quarticIn
 
 
-|                                              xxxxxxxxxxxxxx
-|                                       xxxx
-|                                  xxx
-|                                x
-|                             xx
-|                           x
-|                         xx
-|                        x
-|                      x
-|                     x
+|                                       xxxxxxxxxxxxxxxxxxxxx
+|                              xxxxx
+|                         xxx
+|                      xx
 |                    x
-|                   x
-|
-|
-|                x
-|               x
+|                 xx
+|               xx
 |              x
-|             x
-|
-|
+|            x
 |           x
+|
+|        x
+|       x
+|      x
+|     x
+|    x
+|   x
+|
+|
+| x
+|x
 +------------------------------------------------- quarticOut
-           x
-
-          x
-         x
-
-        x
-
-       x
-
-
-
-
-
-
-
-
-
-  x
-
- x
 
 
 |

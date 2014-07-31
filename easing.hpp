@@ -63,7 +63,7 @@ namespace easing {
 
 	template <typename T> T quarticOut(T t) {
 		const T f = t - 1.;
-		return f * f * f * (1. - f) + 1.;
+		return f * f * f * (1. - t) + 1.;
 	}
 
 	template <typename T> T quarticInOut(T t) {
