@@ -198,4 +198,11 @@ namespace easing {
 			return 0.5 * bounceOut(t * 2. - 1.) + 0.5;
 		}
 	}
+
+	template <typename T> T perlinInOut(T t) {
+		T t3 = t * t * t;
+		T t4 = t3 * t;
+		T t5 = t4 * t;
+		return 6. * t5 - 15. * t4 + 10. * t3;
+	}
 }

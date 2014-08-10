@@ -116,4 +116,5 @@ int main(int argc, char* argv[]) {
 	TEST(bounceIn);
 	TEST(bounceOut);
 	TEST(bounceInOut);
+	TEST(perlinInOut);
 }
